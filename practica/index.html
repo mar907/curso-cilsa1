@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id='lista'>
+        <li id='primero'>elemento numero 1</li>
+        <li>elemento numero 2</li>
+    </ul>
+    <ul>
+        <li> elemento 3</li>
+        <li> elememento 2</li>
+        </ul>
+    <script>
+       //var primerElemento= document.getElementById('primero');
+       // primerElemento.innerHTML= 'nuevo texto';
+
+        //primerElemento.textContent= 'nuevo texto con textcontet';
+
+        var elemento=document.createElement('li');
+        contenido=document.createTextNode('nuevo contenido');
+        elemento.appendChild(contenido);
+
+        var padre= document.getElementsByTagName('li')[0].parentNode,
+        referencia=document.getElementsByTagName ('li')[0];
+
+        //padre.replaceChild(elemento, referencia);
+
+        padre.removeChild(referencia);
+
+    </script>
+</body>
+</html>
